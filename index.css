@@ -1,0 +1,236 @@
+/*Reset CSS */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    font-family: Arial, sans-serif;
+    background-color: rgb(238, 238, 238);
+}
+
+.company-info-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+    margin-left: 150px;
+    margin-right:100px;
+    
+
+}
+
+.home-img-container .img-preview {
+    height: 500px;
+} 
+
+.company-info-container .company-name{
+    font-size: 15px;
+    color:gray;
+    margin-bottom: 20px;
+}
+
+.company-info-container  .company-aim{
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    width:500px;
+}
+
+.company-aim span {
+    color:rgb(13, 177, 13);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.company-info-container  .company-brief-info{
+    margin-bottom: 20px;
+}
+
+
+.company-info-container .img-preview {
+    max-width: 400px;
+}
+
+.navbar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navbar */
+.navbar {
+    background-color: powderblue;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.navbar .navbar-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    margin: 0;
+}
+
+.navbar .menu-toggle {
+    display: none;
+}
+
+.navbar .menu-toggle label {
+    cursor: pointer;
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: relative;
+}
+
+.navbar .menu-toggle .menu-icon,
+.navbar .menu-toggle .menu-icon::before,
+.navbar .menu-toggle .menu-icon::after {
+    background-color: #fff;
+    content: '';
+    display: block;
+    height: 3px;
+    width: 30px;
+    position: absolute;
+    transition: transform 0.3s ease;
+}
+
+.navbar .menu-toggle .menu-icon::before {
+    top: -10px;
+}
+
+.navbar .menu-toggle .menu-icon::after {
+    top: 10px;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar .nav-links li {
+    margin-left: 20px;
+}
+
+.navbar .nav-links li:first-child {
+    margin-left: 0;
+}
+
+.navbar .nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.navbar .nav-links li a:hover {
+    background-color: #555;
+}
+
+/* Main content */
+.main-content {
+    padding: 40px 0;
+}
+
+.main-content h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: green;
+}
+
+.main-content p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 1.6;
+    color: green;
+}
+.footer {
+    background-color: #333;
+    color: green;
+    padding: 40px 0;
+}
+.footer-section link{
+    background-color: green;
+}
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer .footer-section {
+    width: 30%;
+    margin-bottom: 30px;
+}
+
+.footer .footer-section-title {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.footer .footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer .footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer .footer-section ul li i {
+    margin-right: 10px;
+}
+
+.footer .footer-section ul li a {
+    color: green;
+    text-decoration: none;
+}
+
+.footer .footer-section ul li a:hover {
+    text-decoration: underline;
+    color: yellowgreen;
+}
+
+.footer .footer-section ul li .social-icon {
+    margin-right: 10px;
+
+}
+
+.footer .footer-section ul li .social-icon i {
+    font-size: 24px;
+    color: green;
+}
+
+.footer .footer-section ul li .social-icon:hover i {
+    color: green;
+}
+
+@media screen and (max-width: 768px) {
+    .footer .footer-section {
+        width: 100%;
+    }
+}
+
+.contact-form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #555;
+}
